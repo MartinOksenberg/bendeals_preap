@@ -2,7 +2,7 @@ import os
 import requests
 import json
 
-def call_openai_api(system_prompt, user_prompt):
+def call_openai_api(system_prompt, user_prompt, model="gpt-4o"):
     """
     Manually call the OpenAI API using the requests library.
     """
@@ -18,7 +18,7 @@ def call_openai_api(system_prompt, user_prompt):
         "Content-Type": "application/json"
     }
     data = {
-        "model": "gpt-4o",
+        "model": model,
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
