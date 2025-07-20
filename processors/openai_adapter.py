@@ -24,7 +24,7 @@ def call_openai_api(system_prompt, user_prompt, model="gpt-4o"):
             {"role": "user", "content": user_prompt}
         ],
         "temperature": 0.0,
-        "max_tokens": 4096
+        "max_tokens": 16000
     }
 
     try:
