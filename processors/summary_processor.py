@@ -59,7 +59,8 @@ def generate_summary_data(
         "\n2. **Excessive Charge-offs:** Set 'charge_off_red_flag' to true if the client has charge-offs with more than three of the following 'big banks': Citibank, Bank of America, Capital One, Chase, American Express, US Bank, Barclays, Discover."
         
         "\n\n--- Instructions ---"
-        "\n- Start with the highest bracket the client qualifies for and apply knock-downs."
+        "\n- Start with the highest bracket the client qualifies for and apply knock-downs. Let yourself be flexible in case a customer has good history but technally deserves a lower bracket, we want overall good customers."
+        "\n- If you do apply some exception, state it explicitly in the analysis."
         "\- Provide your final assessment as a JSON object only. Do not include markdown or any other commentary."
     )
     
