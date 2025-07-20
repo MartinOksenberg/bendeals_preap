@@ -80,7 +80,7 @@ def generate_summary_data(
         "charge_off_red_flag": False
     }
 
-    response = call_openai_api(system_prompt, user_prompt)
+    response = call_openai_api(system_prompt, user_prompt, model="gpt-4o-mini-high")
     if response:
         content = response.get("choices", [{}])[0].get("message", {}).get("content", "")
         try:
